@@ -1,0 +1,201 @@
+.about-container
+  {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url("./Assests/ss.avif");
+background-size: cover;
+background-position: center;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.AboutInfo {
+    border-radius: 5px;
+    color: white;
+    text-align:justify;
+    max-width: 800px;
+  }
+  .AboutInfo h1{
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  }
+  .AboutInfo p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+  }
+
+  .skills-container {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: auto auto; 
+    text-align: center; 
+  }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    color:#fff;
+  }
+  .skills-container  hr{
+    border-top: 2px solid whitesmoke;
+    text-align: center;
+    width: 20%;
+    margin: 5px auto 20px; 
+  }
+  
+  .skills-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    color: rgb(5, 5, 54);
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .projects-container hr {
+    border-top: 2px solid whitesmoke;
+    text-align: center;
+    width: 20%;
+    margin: 5px auto 20px;
+  }
+  
+  .round-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(5, 5, 54);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .client-year-text p {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  .project-description{
+    display:flex;
+    width: 60%;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+  .webButton {
+    background-color: rgb(5, 5, 54);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #ccc;
+    align-items: center; 
+margin: 0 -50px -42px;
+}
+  
+  .webButton:hover {
+    background-color: #756565;
+  }
+  
+  .Contact-Container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .Contact-Container hr {
+    border-top: 2px solid whitesmoke;
+    text-align: center;
+    width: 50%;
+    margin: 5px auto 20px; 
+}
+
+  .column {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .column-2 {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .ContactDetails {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .Form {
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .InlineInputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .Sub-button{
+    display: flex;
+    justify-content: center;
+
+  }
+  button {
+    padding: 10px 20px;
+    background-color:#ccc;
+    color:rgb(5, 5, 54);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.04);
+  }
+  

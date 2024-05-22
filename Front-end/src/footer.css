@@ -1,0 +1,18 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Footer a {
+    margin: 0 15px;
+    color: #e4e0e0;
+    text-decoration: none;
+}
+
+.Footer a:hover {
+    color: #0073b1; /* LinkedIn blue */
+}
+
+
