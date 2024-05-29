@@ -7,9 +7,10 @@ import "./Home.css"
 
 const About = () => {
     const [about, setAbout] = useState("");
+    const proxy = process.env.REACT_APP_PROXY;
 
     useEffect(() => {
-        axios.get('http://localhost:5000/app/About')
+        axios.get(`${proxy}/app/About`)
             .then((response) => {
                 const aboutData = response.data;
                 if (aboutData.length > 0) {
@@ -37,9 +38,10 @@ const About = () => {
 
 const Skills = () => {
     const [skills, setSkills] = useState([]);
+    const proxy = process.env.REACT_APP_PROXY;
 
     useEffect(() => {
-        axios.get('http://localhost:5000/app/Skills')
+        axios.get(`${proxy}/app/Skills`)
             .then((response) => {
                 const skillsData = response.data;
                 setSkills(skillsData);
@@ -67,9 +69,11 @@ const Skills = () => {
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const proxy = process.env.REACT_APP_PROXY;
+    console.log('Proxy URL:', process.env.REACT_APP_PROXY);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/app/Projects')
+        axios.get(`${proxy}/app/Projects`)
             .then((response) => {
                 const projectsData = response.data;
                 setProjects(projectsData);
@@ -107,6 +111,7 @@ const Projects = () => {
     )
 }
 
+
 const Contact = () => {
     const validationSchema = Yup.object().shape({
         firstName: Yup.string().required('First Name is required'),
@@ -115,6 +120,7 @@ const Contact = () => {
         phoneNumber: Yup.string().required('Phone Number is required'),
         comments: Yup.string().required('Comments are required')
     });
+    const proxy = process.env.REACT_APP_PROXY;
 
     const initialValues = {
         firstName: '',
@@ -126,14 +132,17 @@ const Contact = () => {
 
     const handleSubmit = async (values, { resetForm }) => {
         try {
-            const response = await axios.post('http://localhost:5000/app/submitContactForm', values);
+            const response = await axios.post(`${proxy}/app/submitContactForm`, values);
             console.log('Form submitted successfully:', response.data);
             resetForm();
         } catch (error) {
             console.error('Error submitting form:', error);
         }
     };
-
+    useEffect(() => {
+        console.log(`ProxyURL: ${process.env.REACT_APP_PROXY}`);
+        // Existing axios call...
+    }, []);
     return (
         <div className="Contact-Container">
             <div className="column">
