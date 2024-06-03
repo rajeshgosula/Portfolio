@@ -141,7 +141,7 @@ const Contact = () => {
     };
     useEffect(() => {
         console.log(`ProxyURL: ${process.env.REACT_APP_PROXY}`);
-        // Existing axios call...
+       
     }, []);
     return (
         <div className="Contact-Container">

@@ -1,68 +1,5 @@
 
 
-
-.projects-container {
-  display: grid;
-  grid-template-columns: 1fr; /* One column for h2 */
-  text-align: center;
-  padding: 5%;
-  background-color: #ccc;
-}
-
-.container-header {
-  margin-bottom: 30px;
-}
-
-.project-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  position: relative;
-  margin-bottom: 10%;
-}
-
-.client-year {
-  display: flex;
-  align-items: center;
-}
-
-.round-circle {
-  width: 35%; /* Adjust the size of the round circle */
-  height: 150%; /* Adjust the size of the round circle */
-  border-radius: 50%;
-  background-color: rgb(5, 5, 54);
-  margin-left: 200px;
-}
-
-.client-year-text {
-  margin-left: -25%; /* Adjust margin as needed */
-  text-align: center;
-}
-
-.project-description {
-  display: flex;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 5px;
-  color: rgb(5, 5, 54);
-  text-align: left;
-  margin-right: 100px;
-}
-  
-.webButton{
-background-color: rgb(5, 5, 54);
-margin-right: 90px;
-border-radius: 10px;
-color: #ccc;
-margin-top: -30px;
-}
-
-.container-header {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -83,8 +20,6 @@ margin-top: -30px;
 .App-link {
   color: #61dafb;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
