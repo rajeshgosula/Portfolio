@@ -1,5 +1,6 @@
 // PortfolioController.js
 import PortfolioService from "../Services/PortfolioServices.js";
+import sendEmail from '../services/sesEmailService.js'; // Adjust the import path as necessary
 
 const AboutController = {
   async getAbout(req, res) {
@@ -97,11 +98,17 @@ const ContactController = {
     try {
       const formData = req.body;
       const newSubmission = await PortfolioService.addContactFormSubmission(formData);
-      res.status(201).json({ message: 'Form submission saved successfully', data: newSubmission });
+      
+      // Send email notification
+      await sendEmail(formData);
+
+      res.status(201).json({ message: 'Form submission saved and email sent successfully', data: newSubmission });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
   }
 };
+
+
 
 export {AboutController, SkillsController, ProjectsController, ContactController}
