@@ -16,8 +16,8 @@ app.use(express.json()); // Parse JSON bodies
 
 // Database connection
 mongoose.connect(process.env.DB_URI , {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  //useNewUrlParser: true,
+  //useUnifiedTopology: true,
 })
   .then(() => {
     console.log('Connected to MongoDB');

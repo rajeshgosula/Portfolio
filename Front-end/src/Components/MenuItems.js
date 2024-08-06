@@ -7,9 +7,9 @@ export const MenuItems = async () => {
                 menuItems: [
                    
                         { title: 'Home', path: '/' },
-                        { title: 'About', path: '/about' },
-                        { title: 'Skills', path: '/skills' },
-                        { title: 'Projects', path: '/projects' },
+                        { title: 'Shop', path: '/' },
+                        { title: 'Blog', path: '/' },
+                        { title: 'About', path: '/' },
                     ],
                     
        

@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Toggle menu visibility
+    setMenuOpen(!menuOpen); 
   };
 
   return (
@@ -43,7 +43,7 @@ const Navbar = () => {
         <img src={Profile} alt="Rajesh Gosula" className="logo" />
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
-        &#9776; {/* Unicode for menu icon */}
+        &#9776; 
       </div>
       <ul className={menuOpen ? "show" : ""}>
         {menuItems.map((menuItem, index) => (

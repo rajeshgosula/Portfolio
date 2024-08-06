@@ -1,6 +1,6 @@
 // PortfolioController.js
 import PortfolioService from "../Services/PortfolioServices.js";
-import sendEmail from '../services/sesEmailService.js'; // Adjust the import path as necessary
+import sendEmail from '../Middleware/SendEmail.js'; // Adjust the import path as necessary
 
 const AboutController = {
   async getAbout(req, res) {
